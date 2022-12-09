@@ -74,7 +74,7 @@ Step 1: Create a file named PrivateConf.json with these contents, substituting f
 
 Step 2: Run this command, substituting the name of your virtual machine for "vmname".
 
-	azure vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* –-private-config-path PrivateConf.json
+	az vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* –-private-config-path PrivateConf.json
 
 ### <a name="sshkeyresetcli"></a>Reset the SSH key
 
@@ -87,7 +87,7 @@ Step 1: Create a file named PrivateConf.json with these contents, substituting f
 
 Step 2: Run this command, substituting the name of your virtual machine for "vmname".
 
-	azure vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
+	az vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
 
 ### <a name="resetbothcli"></a>Reset the password and the SSH key
 
@@ -101,7 +101,7 @@ Step 1: Create a file named PrivateConf.json with these contents, substituting f
 
 Step 2: Run this command, substituting the name of your virtual machine for "vmname".
 
-	azure vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
+	az vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
 
 ### <a name="createnewsudocli"></a>Create a new sudo user account
 
@@ -127,7 +127,7 @@ Step 1: Create a file named PrivateConf.json with this content.
 
 Step 2: Run this command, substituting the name of your virtual machine for "vmname".
 
-	azure vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
+	az vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
 
 ### <a name="deletecli"></a>Delete a user
 
@@ -141,13 +141,13 @@ Step 1: Create a file named PrivateConf.json with this content, substituting for
 
 Step 2: Run this command, substituting the name of your virtual machine for "vmname".
 
-	azure vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
+	az vm extension set vmname VMAccessForLinux Microsoft.OSTCExtensions 1.* --private-config-path PrivateConf.json
 
 ### <a name="statuscli"></a>Display the status of the VMAccess extension
 
 To display the status of the VMAccess extension, run this command.
 
-	azure vm extension get
+	az vm extension get
 
 
 ## Use Azure PowerShell
